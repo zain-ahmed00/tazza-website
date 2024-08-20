@@ -1,0 +1,74 @@
+/* media  Query 1170px*/
+@media (max-width: 1170px) {
+    /* general css */
+    .section-subtitle{
+        max-width: 60%;
+    }
+
+    /* 02 banner section */
+    .banner_section .carousel-item{
+        height: 90vh;
+    }
+
+}
+
+/* media  Query 991px*/
+
+@media (max-width: 991px) {
+    /* general css */
+    
+.about .banner_section,
+.gallery .banner_section,
+ .contact .banner_section,
+ .product .banner_section{
+ background: url(../images/banner-slide/top-banner.jpg);
+ padding-top: 12.5rem;
+ padding-bottom: 3rem;
+
+ }
+ .header .navbar{
+    background-size: cover;
+    padding: 2rem;
+}
+.header .navbar-nav{
+    margin-top: 2rem;
+}
+.header .navbar-nav .nav-link{
+padding: 0.2rem 0.5rem;
+margin-bottom: 1rem;
+}
+.header .header-right span{
+    margin-right: 0.2rem 0.5rem;
+}
+    /* 01 navbar css */
+}
+
+/* media  Query 767px*/
+
+@media (max-width: 767px) {
+    /* general css */
+    html,body{
+        font-size: 8px;
+    }
+    .section-subtitle{
+        max-width: 80%;
+    }
+
+    /* 02 banner section */
+    .banner_section{
+        min-height: 70vh;
+    }
+    .banner_section .carousel-item{
+        height: 70vh;
+    }
+}
+
+/* media  Query 590px*/
+
+@media (max-width: 590px) {
+    /* general css */
+    html,body{
+        font-size: 7px;
+    }
+    /* 03 product section */
+}
