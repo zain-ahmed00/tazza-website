@@ -20,7 +20,8 @@
 .about .banner_section,
 .gallery .banner_section,
  .contact .banner_section,
- .product .banner_section{
+ .product .banner_section,
+ .error .banner_section{
  padding-top: 12.5rem ;
  padding-bottom: 3rem;
 

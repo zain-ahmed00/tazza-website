@@ -61,6 +61,7 @@ h1,
     line-height: 1.4;
     font-weight: 600;
     color: var(--primary-text);
+    text-transform: capitalize;
  }
 
  h2{
@@ -169,6 +170,7 @@ button:hover{
     color: var(--secondary-color);
     background: var(--bg-white);
     border: 0.2rem solid var(--secondary-color);
+    letter-spacing: 0.2rem;
 }
 section{
 padding:5rem 0 ;
@@ -194,12 +196,13 @@ padding:5rem 0 ;
 .about .banner_section,
 .gallery .banner_section,
  .contact .banner_section,
- .product .banner_section{
- background: url(../images/banner-slide/top-banner.jpg);
+ .product .banner_section,
+ .error .banner_section{
+ background:url('../images/banner-slide/top-banner.jpg');
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
- padding-top: 17rem;
+padding-top: 17rem;
 padding-bottom: 10rem;
  min-height: auto;
  }
@@ -211,7 +214,7 @@ padding-bottom: 10rem;
     width: 100%;
  }
  .header .navbar{
-    background: url(../images/header-bg.png);
+    background: url('../images/header-bg.png');
     background-position: center;
     background-size: contain;
     background-repeat:no-repeat;
@@ -222,6 +225,7 @@ padding-bottom: 10rem;
  width: 7.8rem;
  margin-top: -0.1rem;
   }
+  
 .header .navbar-nav .nav-link{
     color: var(--text-white);
     font-size: 1.6rem;
@@ -229,6 +233,7 @@ padding-bottom: 10rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 0.2rem;
+    font-family: var(--primary-font);
 
 }
 
@@ -270,7 +275,7 @@ padding-bottom: 10rem;
     transition: 0.3s all ease-in-out;
  }
  .banner_section{
-    background: url(../images/banner-slide/Banner-1.jpg);
+    background: url('../images/banner-slide/Banner-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -545,3 +550,65 @@ font-size: 1.2rem;
    .about .about-detail p{
     color: var(--primary-text);
    }
+
+   /* ==============
+   product page detail
+   ================= */
+   .product_section .product-details p{
+    margin-bottom: 1.5rem;
+   }
+
+   /* =============
+   contact page detail
+   ================ */
+   .contact .contact-form{
+    background-color: var(--light-color);
+    padding: 5rem;
+    box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
+   }
+   .contact .contact-form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+   }
+   .contact .contact-form .form-control::placeholder{
+    color: var(--primary-text);
+   }
+   .contact .contact-form .form-control{
+    border-radius: 0rem;
+    padding:1rem 1.5rem ;
+    border: 0.1rem solid var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+   }
+   .contact .contact-form  textarea{
+    min-height: 15rem;
+   }
+   .contact .contact-form .info-box li{
+    position: relative;
+    padding-left: 7rem;
+    padding-bottom: 3.5rem;
+    margin-bottom: 2.9rem;
+   }
+   .contact .contact-form .info-box li i{
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    color: var(--primary-text);
+   }
+   .contact .contact-form .info-box li p{
+    color: var(--primary-text);
+   }
+   .contact .contact-form .info-box li a{
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family: var(--secondary-font);
+   }
+
+
+
+
